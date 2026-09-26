@@ -1,13 +1,25 @@
-# Digital Forensics Investigation: The National Art Gallery Case
+# Digital Forensics Investigations & Comparative Research
 
 ## Overview
-A comprehensive digital forensics examination of an external hard drive image (`tracy-external-2012-07-16-final.E01`) adhering strictly to ACPO (Association of Chief Police Officers) principles.
+This repository contains digital forensics laboratory investigations, forensic data recovery case studies, and practical comparative research on mobile and computer evidence extraction methodologies.
 
-## Key Investigation Highlights
-* **Software Used:** Autopsy Forensic Browser on Microsoft Windows.
-* **Artifact Analysis:** Web search history, system metadata, and recovered security duty schedules.
-* **Decryption & Uncovering Evidence:** Identification of an encrypted ZIP archive containing insurance valuation documents totaling $260,000 for stolen stamp collections.
-* **Email & Timeline Reconstruction:** Mapped covert communication chains across multiple accounts to establish a conspiracy timeline.
+---
 
-## Reports
-* [Digital Forensics Final Report]
+## Projects Included
+
+### 1. Android Data Extraction: Commercial vs. Open-Source Methodologies
+* **Scope:** Comparative analysis of commercial vs. non-commercial mobile forensic acquisition techniques on rooted Android storage.
+* **Tools Used:** Magnet AXIOM (ADB Unlocked) and Android Debug Bridge (ADB CLI).
+* **Key Findings:**
+  * **Magnet AXIOM:** Automated full file system acquisition, structured artifact parsing (Chrome/Firefox history, contacts, Bluetooth, Wi-Fi logs), automatic hash preservation, and courtroom-ready reporting.
+  * **Manual ADB:** High flexibility and raw access to internal `/data/data/` app directories and SQLite databases, but lacks automated parsing, timeline generation, and standardized evidence logging.
+* **Forensic Considerations:** Analysis of NAND flash memory mechanics (FTL wear-leveling), legal defensibility of device rooting, and adherence to NIST SP 800-101 Rev. 1 guidelines.
+* **Report:** [Android Data Extraction Tools Report]
+
+---
+
+### 2. Digital Forensics Investigation: The National Art Gallery Case
+* **Scope:** Forensic examination of an external hard drive image (`tracy-external-2012-07-16-final.E01`) in compliance with ACPO guidelines.
+* **Tools Used:** Autopsy Forensic Browser on Windows.
+* **Key Findings:** Recovery of encrypted insurance documentation ($260k total valuation), web history analysis, email header reconstruction, and security schedule extraction.
+* **Report:** [Digital Forensics Final Report]
